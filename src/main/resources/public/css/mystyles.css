@@ -21,7 +21,7 @@ body, html {
   color: white;
 }
 
-.hero-text button {
+.main-button {
   border: 2px solid #ffffff;
   outline: 0;
   border-radius:0;
@@ -32,12 +32,16 @@ body, html {
   text-align: center;
   transition:.2s;
 }
-
-.hero-text button:hover {
+.main-button:hover {
   background-color: transparent;
   color: #c5a559;
   border: 2px solid #c5a559;
 }
+
+.search-button{
+	background-color: #000000;
+}
+
 .jumbotron {
   height:100vh;
   background: orange;

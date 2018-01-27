@@ -27,13 +27,22 @@
   <button class="btn-main">Search</button>
 </div>
 -->
-<div class=" container-fluid hero-image">
+<div class="container-fluid hero-image">
   <div class="hero-text">
     <h1>League of Legends</h1>
     <p>Are you a One Trick?</p>
-     <button type="button" class="btn">Search</button>
-  </div>
-</div>
+     <button type="button" id="hide" class="btn main-button" onclick="document.getElementById('demo').style.display='block';document.getElementById('hide').style.display='none' ">Search</button>
+	 
+    <form class="form-inline" id="demo" style="display:none">
+      <div class="input-group">
+        <input type="email" class="form-control" size="50" placeholder="Enter Summoner Name" required>
+        <div class="input-group-btn">
+          <button type="button" class="btn search-button">Search</button>
+        </div>
+      </div>
+    </form>
+  </div> <!-- hero-text -->
+</div> <!-- hero-image -->
 
 </body>
 </html>
