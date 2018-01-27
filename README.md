@@ -2,4 +2,5 @@
 Create statistics given a player Name
 ## Team
 - Jake Rossi
--Jae Yang
+- Jae Yang
+- Dhensel Dorji
