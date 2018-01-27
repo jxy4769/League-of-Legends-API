@@ -8,10 +8,48 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="resources/public/css/mystyles.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Roboto" rel="stylesheet">
 </head>
+<script>
+  var header = document.querySelector('header');
+  var section = document.querySelector('section');
+  var requestURL = 'http://cors.io/?https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/wrs666?api_key=RGAPI-099247db-98fb-4345-a4aa-cd091eaa75bb';
+  var request = new XMLHttpRequest();
+  
+  function callOtherDomain(){
+	if(request){
+  request.open('GET', requestURL);
+  request.responseType = 'json';
+  request.onreadystatechange = handler;
+  request.send();
+  }
+  }
+  callOtherDomain();
+  request.onload = function() {
+    var userInfo = request.response;
+    populateHeader(userInfo);
+  }
+  function populateHeader(jsonObj) {
+  var myH1 = document.createElement('h1');
+  myH1.textContent = jsonObj['name'];
+  header.appendChild(myH1);
+}
+</script>
 <body>
+  <!--
   <h1>TEST RESULT PAGE</h1>
   <a href="index.html">back to home </a>
+  -->
+  <header>
+  </header>
+  <section>
+  </section>
 </body>
+
+<script>
+var header = document.querySelector('header');
+var section = document.querySelector('section');
+</script>
+
 </html>
