@@ -1,21 +1,46 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.hero-image {
+  background-image: url("../media/imgs/background.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: 2px solid #ffffff;
+  outline: 0;
+  border-radius:0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: #ffffff;
+  background-color: transparent;
+  text-align: center;
+  transition:.2s;
+}
+
+.hero-text button:hover {
+  background-color: transparent;
+  color: #c5a559;
+  border: 2px solid #c5a559;
+}
 .jumbotron {
   height:100vh;
-}
-
-/* Black buttons with extra padding and without rounded borders */
-.btn {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #f1f1f1;
-    border-radius: 0;
-    transition: .2s;
-}
-
-/* On hover, the color of .btn will transition to white with black text */
-.btn:hover, .btn:focus {
-    border: 1px solid #333;
-    background-color: #fff;
-    color: #000;
+  background: orange;
 }
 
 
