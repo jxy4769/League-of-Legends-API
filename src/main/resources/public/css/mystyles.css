@@ -1,0 +1,198 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.hero-image {
+  background-image: url("../media/imgs/background.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: 2px solid #ffffff;
+  outline: 0;
+  border-radius:0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: #ffffff;
+  background-color: transparent;
+  text-align: center;
+  transition:.2s;
+}
+
+.hero-text button:hover {
+  background-color: transparent;
+  color: #c5a559;
+  border: 2px solid #c5a559;
+}
+.jumbotron {
+  height:100vh;
+  background: orange;
+}
+
+
+/** Social Media Buttons ************************************/
+.fa {
+  font-size: 25px !important;
+  padding:5px 0px !important;
+  width: 40px!important;
+  text-align: center!important;
+  text-decoration: none!important;
+  border: 1px solid #f4511e!important;
+  border-radius: 5px!important;
+  margin-right:8px!important;
+  -webkit-transition: all .5s ease!important;
+  -moz-transition: all .5s ease!important;
+  -ms-transition: all .5s ease!important;
+  -o-transition: all .5s ease!important;
+  transition: all .5s ease!important;
+}
+.fa:hover {
+	text-decoration: none!important;
+	background:#f4511e!important;
+	color:#000000!important;
+}
+.fa-linkedin {
+  background: #000000!important;
+  color:#f4511e!important;
+  opacity:0.7;
+}
+.fa-instagram {
+  background: #000000!important;
+  color:#f4511e!important;
+  opacity:0.7;
+}
+.fa-github {
+  background: #000000!important;
+  color:#f4511e!important;
+  opacity:0.7;
+}
+/** Image Caption Overlay ***********************************/
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.img-wrapper:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+/** Image Hover Zoom ****************************************/
+.img-caption{
+	margin-top:0;
+	background-color: red;
+}
+.img-wrapper {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+}
+
+.img-wrapper img {
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    vertical-align: middle;
+}
+
+.img-wrapper:hover img {
+	transform:scale(1.2);
+    -ms-transform:scale(1.2); /* IE 9 */
+    -moz-transform:scale(1.2); /* Firefox */
+    -webkit-transform:scale(1.2); /* Safari and Chrome */
+    -o-transform:scale(1.2); /* Opera */
+	filter: brightness(50%);
+}
+/** No Gutters ***********************************************/
+.row.no-gutters {
+   margin-right: 0;
+   margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+   padding-right: 0;
+   padding-left: 0;
+}
+
+/** Slide In Animation ******************************************/
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+
+  /** Media Fitting ****************************************/
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
