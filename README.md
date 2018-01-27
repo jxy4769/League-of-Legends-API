@@ -3,4 +3,5 @@ Create statistics given a player Name
 ## Team
 - Jake Rossi
 - Will Schultheis
--Jae Yang
+- Jae Yang
+- Dhensel Dorji
