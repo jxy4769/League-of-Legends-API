@@ -88,7 +88,35 @@ body, html {
   height:100vh;
   background: orange;
 }
+/**************************************************/
+.about-us{
+    height: 100vh;
+    background-color: #030404;
+}
+.about-us h1{
+    margin-top: 100px;
+    font-family: 'Avenir';
+    color: #ce9645;
+    font-size: 2em;
+    letter-spacing: 7px;
+}
 
+.underline{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    width: 220px;
+    height: auto;
+}
+.about-info{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.about-us p{
+    font-family: 'Avenir';
+    color: #725827;
+    font-size: 1em;
+    letter-spacing: 3px;
+}
 /** Slide In Animation ******************************************/
   .slideanim {visibility:hidden;}
   .slide {
