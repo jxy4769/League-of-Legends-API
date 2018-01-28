@@ -1,9 +1,10 @@
-function masteryList(id){
+function championName(id){
   
   var header = document.querySelector('header');
   var section = document.querySelector('section');
   var proxy = 'https://cors-anywhere.herokuapp.com/';
-  var apiRequestURL = 'https://na1.api.riotgames.com/lol/champion-mastery/v3/champion-masteries/by-summoner/'+id+'?api_key=RGAPI-099247db-98fb-4345-a4aa-cd091eaa75bb';
+  var api_key = 'RGAPI-099247db-98fb-4345-a4aa-cd091eaa75bb'
+  var apiRequestURL = 'https://na1.api.riotgames.com/lol/static-data/v3/champions/'+id+'?locale=en_US&champData=image&api_key='+ api_key;
   var requestURL = proxy + apiRequestURL;
   var request = new XMLHttpRequest();
   var id;
@@ -17,24 +18,14 @@ function masteryList(id){
   callOtherDomain();
   request.onload = function() {
     var userInfo = request.response;
-    if (userInfo['status']==null){
     getBestChamp(userInfo);
-	}
-	else{
-          alert("Invalid");
-          window.location='index.html';
-        }
+	
   }
-
-
   function getBestChamp(jsonObj) {
 	var myH3 = document.createElement('h3');
-	var myH4 = document.createElement('h4');
-	var champId = jsonObj[0]['championId'];
-	myH3.textContent = jsonObj[0]['championPoints'];
-	myH4.textContent = champId;
+	var myImg = document.createElement('img');
+	myH3.textContent = "Champion Name:" + jsonObj['name'];
+	myImg.src = http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Aatrox_0.jpg
 	header.appendChild(myH3);
-	header.appendChild(myH4);
-	championName(champId);
   }
 }
