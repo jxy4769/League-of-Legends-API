@@ -34,10 +34,22 @@
 function myFunction(){
   var name_box = document.getElementById("input");
   var name = name_box.value;
-  sessionStorage.setItem("name", name);
-  window.location='results.html';
+  var reg = /^[0-9\\p{L} _\\.]+$/
+
+
+  if (!reg.test(name)){
+    sessionStorage.setItem("name", name);
+    window.location='results.html';
   }
-  
+  else{
+    alert("Invalid Input");
+    location.reload();
+    return false;
+  }
+
+
+ }
+
 function runScript(e) {
     if (e.keyCode == 13) {
         myFunction();
