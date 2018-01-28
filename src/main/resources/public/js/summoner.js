@@ -23,8 +23,7 @@ function summoner(name){
     populateHeader(userInfo);
     }
     else{
-      alert("Invalid")
-      window.location='index.html';
+      window.location='error.html';
     }
   }
 
