@@ -28,7 +28,8 @@
 	<p id="summonerRank" class="left mbottom">CURRENT RANK: </p>
 	<p id="masteryScore" class="left mbottom"> MASTERY SCORE: </p>
 	<p id="mostPlayed" class="left mbottom">MOST PLAYED CHAMPION: </p>
-	
+	<img id="masteryIcon" class="left"></img>
+	<p id="masteryTitle" class="left">MASTERY LEVEL <span id="masteryNumber"></span></p>
     </div>  
   </div>
 </div>
@@ -37,9 +38,34 @@
 
 <script>
 var name = sessionStorage.getItem("name");
-var header = document.querySelector('header');
-var section = document.querySelector('section');
 var summonerId = summoner(name);
+var masteryLevel = sessionStorage.getItem("masteryLevel");
+switch (masteryLevel) {
+    case '0':
+        document.getElementById("masteryIcon").src = "media/imgs/m1.png";
+        break;
+    case '1':
+        document.getElementById("masteryIcon").src = "media/imgs/m1.png";
+        break;
+    case '2':
+        document.getElementById("masteryIcon").src = "media/imgs/m2.png";
+        break;
+    case '3':
+        document.getElementById("masteryIcon").src = "media/imgs/m3.png";
+        break;
+    case '4':
+        document.getElementById("masteryIcon").src = "media/imgs/m4.png";
+        break;
+    case '5':
+        document.getElementById("masteryIcon").src = "media/imgs/m5.png";
+        break;
+    case '6':
+        document.getElementById("masteryIcon").src = "media/imgs/m6.png";
+		break;
+	case '7':
+		document.getElementById("masteryIcon").src = "media/imgs/m7.png";
+}
+document.getElementById("masteryNumber").innerHTML += masteryLevel;
 </script>
 
 </html>

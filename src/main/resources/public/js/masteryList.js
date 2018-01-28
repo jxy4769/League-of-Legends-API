@@ -18,6 +18,7 @@ function masteryList(id,apiKEY){
   request.onload = function() {
     var userInfo = request.response;
     if (userInfo['status']==null){
+	getMasteryNumber(userInfo);
     getBestChamp(userInfo);
 	}
 	else{
@@ -32,6 +33,11 @@ function masteryList(id,apiKEY){
 	calculateOneTrick(jsonObj,champPoints);
 	document.getElementById("masteryScore").innerHTML += (champPoints);
 	championName(champId,apiKEY);
+  }
+  
+   function getMasteryNumber(jsonObj) {
+	var masteryPoints = jsonObj[0]['championLevel'];
+	sessionStorage.setItem("masteryLevel", masteryPoints);
   }
   
   function calculateOneTrick(jsonObj,champPoints){

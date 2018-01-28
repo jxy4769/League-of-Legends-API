@@ -7,7 +7,7 @@ font-family: "Avenir-Light";
 src: url("../fonts/AvenirLTStd-Light.otf") format("opentype");
 }
 body{
-	color:red;
+	color:#ce9645;
 }
 .hero-image {
   font-family: 'Avenir';
@@ -87,4 +87,7 @@ body{
     height: auto;
     border: 1px solid #ce9645;
 
+}
+#masteryTitle{
+	margin-top:20px;
 }
