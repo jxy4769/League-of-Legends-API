@@ -31,13 +31,10 @@ function summoner(name){
 
 	id += jsonObj['id'];
 	var myH1 = document.createElement('h1');
-	var myH2 = document.createElement('h1');
 	var myH3 = document.createElement('h1');
 	myH1.textContent = "Summoner Name: " + jsonObj['name'];
-	myH2.textContent = "Summoner Id: " + jsonObj['id']
 	myH3.textContent = "Level: " + jsonObj['summonerLevel']
 	header.appendChild(myH1);
-	header.appendChild(myH2);
 	header.appendChild(myH3);
 	masteryList(id,apiKEY);
 	RankedRating(id,apiKEY);

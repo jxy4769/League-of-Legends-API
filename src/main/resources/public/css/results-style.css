@@ -6,3 +6,12 @@ src: url("../fonts/AvenirLTStd-Roman.otf") format("opentype");
 font-family: "Avenir-Light";
 src: url("../fonts/AvenirLTStd-Light.otf") format("opentype");
 }
+.hero-image {
+  font-family: 'Avenir';
+  background-image: url("../../../media/imgs/resultback.png");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
