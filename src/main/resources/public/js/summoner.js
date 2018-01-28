@@ -3,7 +3,7 @@ function summoner(name){
   var header = document.querySelector('header');
   var section = document.querySelector('section');
   var proxy = 'https://cors-anywhere.herokuapp.com/';
-  var apiKEY =  'RGAPI-fb582f48-8f3b-444a-9e07-df7c94c0d340';
+  var apiKEY =  'RGAPI-785e49ce-0a77-4620-b3e4-425419da1e58';
   var apiRequestURL = 'https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/'+name+'?api_key='+ apiKEY;
   var requestURL = proxy + apiRequestURL;
   var request = new XMLHttpRequest();

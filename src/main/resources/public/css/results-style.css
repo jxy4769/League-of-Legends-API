@@ -18,3 +18,64 @@ body{
   background-size: cover;
   position: relative;
 }
+
+.home{
+    width: 20px;
+    margin: 20px;
+}
+
+.home:hover{
+  cursor: pointer;
+}
+
+#summonerName {
+ font-family: 'Avenir-Light';
+ color: #ce9645;
+ font-size: 2em;
+}
+
+.underline{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 220px;
+    height: auto;
+}
+
+
+.stats{
+    padding: 100px;
+    
+}
+#summonerLevel {
+ font-family: 'Avenir-Light';
+ color: #ce9645;
+ font-size: 1.5em;
+}
+
+#summonerRank {
+ font-family: 'Avenir-Light';
+ color: #ce9645;
+ font-size: 1.5em;
+}
+
+#masteryScore {
+ font-family: 'Avenir-Light';
+ color: #ce9645;
+ font-size: 1.5em;
+}
+
+#mostPlayed {
+ font-family: 'Avenir-Light';
+ color: #ce9645;
+ font-size: 1.5em;
+}
+
+#champPortrait{
+    float: right;
+    margin-right: 100px;
+    margin-top: 30px;
+    width: 250px;
+    height: auto;
+    
+
+}
