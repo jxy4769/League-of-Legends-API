@@ -29,5 +29,6 @@ function summoner(name){
 	header.appendChild(myH1);
 	header.appendChild(myH2);
 	masteryList(id);
+	RankedRating(id);
   }
 }
