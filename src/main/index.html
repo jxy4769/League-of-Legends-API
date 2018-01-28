@@ -29,14 +29,12 @@
   </div> <!-- hero-text -->
 </div> <!-- hero-image -->
 
+</body>
 <script>
-
 function myFunction(){
   var name_box = document.getElementById("input");
   var name = name_box.value;
   var reg = /^[0-9\\p{L} _\\.]+$/
-
-
   if (!reg.test(name)){
     sessionStorage.setItem("name", name);
     window.location='results.html';
@@ -46,10 +44,7 @@ function myFunction(){
     location.reload();
     return false;
   }
-
-
  }
-
 function runScript(e) {
     if (e.keyCode == 13) {
         myFunction();
@@ -59,6 +54,4 @@ function runScript(e) {
   var object = document.getElementById("submit");
   object.onclick = function(){myFunction()};
 </script>
-
-</body>
 </html>
