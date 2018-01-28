@@ -17,9 +17,16 @@ function masteryList(id){
   callOtherDomain();
   request.onload = function() {
     var userInfo = request.response;
+    if (userInfo['status']==null){
     getBestChamp(userInfo);
-	
+	}
+	else{
+          alert("Invalid");
+          window.location='index.html';
+        }
   }
+
+
   function getBestChamp(jsonObj) {
 	var myH3 = document.createElement('h3');
 	var myH4 = document.createElement('h4');

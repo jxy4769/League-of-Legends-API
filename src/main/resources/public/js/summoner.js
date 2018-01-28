@@ -16,11 +16,20 @@ function summoner(name){
 	}
   }
   callOtherDomain();
+
   request.onload = function() {
     var userInfo = request.response;
+    if (userInfo['status']==null){
     populateHeader(userInfo);
+    }
+    else{
+      alert("Invalid")
+      window.location='index.html';
+    }
   }
+
   function populateHeader(jsonObj) {
+
 	id += jsonObj['id'];
 	var myH1 = document.createElement('h1');
 	var myH2 = document.createElement('h2');
