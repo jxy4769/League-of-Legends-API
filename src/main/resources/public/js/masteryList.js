@@ -30,11 +30,23 @@ function masteryList(id,apiKEY){
   function getBestChamp(jsonObj) {
 	var myH3 = document.createElement('h1');
 	var myH4 = document.createElement('h1');
+	var champPoints = jsonObj[0]['championPoints'];
 	var champId = jsonObj[0]['championId'];
-	myH3.textContent = jsonObj[0]['championPoints'];
+	myH3.textContent = champPoints;
+	calculateOneTrick(jsonObj,champPoints);
 	myH4.textContent = champId;
 	header.appendChild(myH3);
 	header.appendChild(myH4);
 	championName(champId,apiKEY);
+  }
+  
+  function calculateOneTrick(jsonObj,champPoints){
+	  var total = 0;
+	  for (i = 1; i < jsonObj.length; i++){
+		  total += jsonObj[i]['championPoints'];
+	  }
+	  if (champPoints/total > .65 ){
+		  window.alert("You are a one trick")
+	  }
   }
 }
