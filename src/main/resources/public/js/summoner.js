@@ -40,7 +40,7 @@ function summoner(name){
 	header.appendChild(myH1);
 	header.appendChild(myH2);
 	header.appendChild(myH3);
-	masteryList(id);
-	RankedRating(id);
+	masteryList(id,apiKEY);
+	RankedRating(id,apiKEY);
   }
 }

@@ -1,9 +1,9 @@
-function masteryList(id){
+function masteryList(id,apiKEY){
   
   var header = document.querySelector('header');
   var section = document.querySelector('section');
   var proxy = 'https://cors-anywhere.herokuapp.com/';
-  var apiRequestURL = 'https://na1.api.riotgames.com/lol/champion-mastery/v3/champion-masteries/by-summoner/'+id+'?api_key=RGAPI-099247db-98fb-4345-a4aa-cd091eaa75bb';
+  var apiRequestURL = 'https://na1.api.riotgames.com/lol/champion-mastery/v3/champion-masteries/by-summoner/'+id+'?api_key='+apiKEY;
   var requestURL = proxy + apiRequestURL;
   var request = new XMLHttpRequest();
   var id;
@@ -35,6 +35,6 @@ function masteryList(id){
 	myH4.textContent = champId;
 	header.appendChild(myH3);
 	header.appendChild(myH4);
-	championName(champId);
+	championName(champId,apiKEY);
   }
 }

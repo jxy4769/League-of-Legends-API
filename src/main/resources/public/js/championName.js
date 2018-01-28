@@ -1,10 +1,9 @@
-function championName(id){
+function championName(id,apiKEY){
   
   var header = document.querySelector('header');
   var section = document.querySelector('section');
   var proxy = 'https://cors-anywhere.herokuapp.com/';
-  var api_key = 'RGAPI-099247db-98fb-4345-a4aa-cd091eaa75bb'
-  var apiRequestURL = 'https://na1.api.riotgames.com/lol/static-data/v3/champions/'+id+'?locale=en_US&champData=image&api_key='+ api_key;
+  var apiRequestURL = 'https://na1.api.riotgames.com/lol/static-data/v3/champions/'+id+'?locale=en_US&champData=image&api_key='+ apiKEY;
   var imgLoadingURL = 'http://ddragon.leagueoflegends.com/cdn/img/champion/loading/'
   var requestURL = proxy + apiRequestURL;
   var request = new XMLHttpRequest();
