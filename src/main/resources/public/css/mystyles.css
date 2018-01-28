@@ -1,9 +1,18 @@
+@font-face {
+font-family: "Avenir";
+src: url("../fonts/AvenirLTStd-Roman.otf") format("opentype");
+}
+@font-face {
+font-family: "Avenir-Light";
+src: url("../fonts/AvenirLTStd-Light.otf") format("opentype");
+}
 body, html {
   height: 100%;
   margin: 0;
 }
 
 .hero-image {
+  font-family: 'Avenir';
   background-image: url("../../../media/imgs/background.png");
   height: 100%;
   background-position: center;
@@ -21,27 +30,57 @@ body, html {
   color: white;
 }
 
+.hero-text h2{
+  color: #ce9645;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-size: 2em;
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+.main-logo{
+	width:550px;
+	height:auto;
+}
+
 .main-button {
-  border: 2px solid #ffffff;
-  outline: 0;
+  border: 1px solid #ce9645;
   border-radius:0;
-  display: inline-block;
   padding: 10px 25px;
   color: #ffffff;
   background-color: transparent;
   text-align: center;
   transition:.2s;
+  letter-spacing: 7px;
+  text-align:center;
+  margin: auto;
+  height:34px;
+  padding-bottom:30px;
 }
+
 .main-button:hover {
-  background-color: transparent;
-  color: #c5a559;
-  border: 2px solid #c5a559;
+  background-color: #ce9645;
+  color: #ffffff;
 }
 
-.search-button{
-	background-color: #000000;
+.input-group{
+	border-radius:0;
+	border: 1px solid #c5a559;
 }
+.form-control{
+  background-color:transparent;
+  border:none;
+}
+.form-control::-webkit-input-placeholder { color: white; opacity:0.6; font-family: 'Avenir-Light';}  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { color: white; opacity:0.6; font-family: 'Avenir-Light';}  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { color: white; opacity:0.6; font-family: 'Avenir-Light';}  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color: white; opacity:0.6; font-family: 'Avenir-Light';}  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color: white; opacity:0.6; font-family: 'Avenir-Light';}  /* Microsoft Edge */
 
+.mag-search{
+  height:80%;
+  width:auto;
+}
 .jumbotron {
   height:100vh;
   background: orange;
