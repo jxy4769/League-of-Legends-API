@@ -17,6 +17,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  letter-spacing: 7px;
 }
 
 .home{
@@ -32,6 +33,7 @@ body{
  font-family: 'Avenir-Light';
  color: #ce9645;
  font-size: 2em;
+ text-transform: uppercase;
 }
 
 .underline{
@@ -39,9 +41,15 @@ body{
     margin-bottom: 20px;
     width: 220px;
     height: auto;
+	margin-left:150px;
 }
 
-
+.left{
+	padding-left:150px;
+}
+.mbottom{
+	margin-bottom:30px;
+}
 .stats{
     padding: 100px;
     
@@ -68,14 +76,15 @@ body{
  font-family: 'Avenir-Light';
  color: #ce9645;
  font-size: 1.5em;
+ text-transform: uppercase;
 }
 
 #champPortrait{
     float: right;
-    margin-right: 100px;
+    margin-right: 200px;
     margin-top: 30px;
     width: 250px;
     height: auto;
-    
+    border: 1px solid #ce9645;
 
 }
