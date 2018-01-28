@@ -4,7 +4,7 @@ Create statistics given a player Name
 ### Lead Developer
 #### _FullStack_
 - Jae Yang
-### Lead Developer
+### Developer
 #### _Backend_
 - Will Schultheis
 ### Developer
