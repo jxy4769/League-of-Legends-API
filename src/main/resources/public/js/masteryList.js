@@ -28,8 +28,8 @@ function masteryList(id){
 
 
   function getBestChamp(jsonObj) {
-	var myH3 = document.createElement('h3');
-	var myH4 = document.createElement('h4');
+	var myH3 = document.createElement('h1');
+	var myH4 = document.createElement('h1');
 	var champId = jsonObj[0]['championId'];
 	myH3.textContent = jsonObj[0]['championPoints'];
 	myH4.textContent = champId;
