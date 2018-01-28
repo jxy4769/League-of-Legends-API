@@ -24,4 +24,5 @@ var header = document.querySelector('header');
   myH2.textContent = jsonObj['profileIconId']
   header.appendChild(myH1);
   header.appendChild(myH2);
+
 }

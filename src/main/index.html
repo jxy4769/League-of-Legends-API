@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="resources/public/css/mystyles.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Roboto" rel="stylesheet">
 </head>
 <body>
 
@@ -19,14 +20,27 @@
 	 
     <form class="form-inline" id="demo" style="display:none">
       <div class="input-group">
-        <input class="form-control" size="50" placeholder="Enter Summoner Name" required>
+        <input class="form-control" id="input" size="50" placeholder="Enter Summoner Name" required>
         <div class="input-group-btn">
-		  <img src="media/imgs/magnify.png" class="img-responsive mag-search" alt="SEARCH" onclick="window.location='results.html'"></img>
+		  <img src="media/imgs/magnify.png" class="img-responsive mag-search" id="submit"alt="SEARCH"></img>
         </div>
       </div>
     </form>
   </div> <!-- hero-text -->
 </div> <!-- hero-image -->
+
+<script>
+
+  var object = document.getElementById("submit");
+  object.onclick = function(){myFunction()};
+
+  function myFunction(){
+  var name_box = document.getElementById("input");
+  var name = name_box.value;
+  sessionStorage.setItem("name", name);
+  window.location='results.html';
+  }
+</script>
 
 </body>
 </html>
