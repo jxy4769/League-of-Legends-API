@@ -30,7 +30,7 @@ function masteryList(id,apiKEY){
 	var champPoints = jsonObj[0]['championPoints'];
 	var champId = jsonObj[0]['championId'];
 	calculateOneTrick(jsonObj,champPoints);
-	document.getElementById("masteryScore").innerHTML += ("Mastery Score: " + champPoints);
+	document.getElementById("masteryScore").innerHTML += (champPoints);
 	championName(champId,apiKEY);
   }
   

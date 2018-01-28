@@ -10,7 +10,7 @@ function championName(id,apiKEY){
 
   function getBestChamp() {
 	var obj = champList.data[id];
-	document.getElementById("mostPlayed").innerHTML += ("Most Played Champion Name: " + obj['name']);
+	document.getElementById("mostPlayed").innerHTML += (obj['name']);
 	document.getElementById("champPortrait").src = imgLoadingURL + obj['name'] + '_0.jpg';
   }
   getBestChamp();

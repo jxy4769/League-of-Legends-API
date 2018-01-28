@@ -33,8 +33,8 @@ function summoner(name){
 	var myH1 = document.createElement('h1');
 	var myH2 = document.createElement('h1');
 	var myH3 = document.createElement('h1');
-	document.getElementById("summonerName").innerHTML += ("Summoner Name: " + jsonObj['name']);
-	document.getElementById("summonerLevel").innerHTML += ("Summoner Level: " + jsonObj['summonerLevel']);
+	document.getElementById("summonerName").innerHTML += (jsonObj['name']);
+	document.getElementById("summonerLevel").innerHTML += (jsonObj['summonerLevel']);
 	masteryList(id,apiKEY);
 	RankedRating(id,apiKEY);
   }

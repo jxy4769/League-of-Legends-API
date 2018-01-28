@@ -26,7 +26,7 @@ function RankedRating(id, apiKEY){
 		document.getElementById("summonerRank").innerHTML += ("Current Rank: Unranked");
 	}
 	else{
-	document.getElementById("summonerRank").innerHTML += ("Current Rank: " + jsonObj[0]['tier'] + " "+ jsonObj[0]['rank']);
+	document.getElementById("summonerRank").innerHTML += (jsonObj[0]['tier'] + " " + jsonObj[0]['rank']);
 	}
   }
 }
