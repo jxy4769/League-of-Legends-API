@@ -7,15 +7,19 @@ font-family: "Avenir-Light";
 src: url("../fonts/AvenirLTStd-Light.otf") format("opentype");
 }
 body{
-	color:#ce9645;
-}
-.hero-image {
-  font-family: 'Avenir';
+  color:#ce9645;
   background-image: url("../../../media/imgs/resultback.png");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.hero-image {
+  font-family: 'Avenir';
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
   position: relative;
   letter-spacing: 7px;
 }

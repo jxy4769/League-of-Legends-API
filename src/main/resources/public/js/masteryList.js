@@ -47,6 +47,8 @@ function masteryList(id,apiKEY){
 	  }
 	  if (champPoints/total > .65 ){
 		  window.alert("You are a one trick")
+			
+
 	  }
   }
 }

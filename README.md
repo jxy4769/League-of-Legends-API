@@ -12,3 +12,6 @@ Create statistics given a player Name
 - Jake Rossi
 ### Designer
 - Dhensel Dorji
+
+This is a League of Legends Website designed to see if you really are the next One Trick Pony.
+Look up your stats!
