@@ -22,7 +22,11 @@ function RankedRating(id, apiKEY){
   }
   function getRank(jsonObj) {
 	var myH1 = document.createElement('h1');
-	myH1.textContent = "Current Rank: " + jsonObj[0]['tier'] + " "+ jsonObj[0]['rank'];
-	header.appendChild(myH1);
+	if(jsonObj.length == 0){
+		document.getElementById("summonerRank").innerHTML += ("Current Rank: Unranked");
+	}
+	else{
+	document.getElementById("summonerRank").innerHTML += ("Current Rank: " + jsonObj[0]['tier'] + " "+ jsonObj[0]['rank']);
+	}
   }
 }

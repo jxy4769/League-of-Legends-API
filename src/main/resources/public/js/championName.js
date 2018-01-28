@@ -21,11 +21,7 @@ function championName(id,apiKEY){
 	
   }
   function getBestChamp(jsonObj) {
-	var myH1 = document.createElement('h1');
-	var myImg = document.createElement('img');
-	myH1.textContent = "Champion Name: " + jsonObj['name'];
-	myImg.src = imgLoadingURL + jsonObj['name']+ '_0.jpg';
-	header.appendChild(myH1);
-	header.appendChild(myImg);
+	document.getElementById("mostPlayed").innerHTML += ("Most Played Champion Name: " + jsonObj['name']);
+	document.getElementById("champPortrait").src = imgLoadingURL + jsonObj['name']+ '_0.jpg';
   }
 }

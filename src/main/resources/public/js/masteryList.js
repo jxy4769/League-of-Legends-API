@@ -21,19 +21,16 @@ function masteryList(id,apiKEY){
     getBestChamp(userInfo);
 	}
 	else{
-          alert("Invalid");
-          window.location='index.html';
-        }
+          window.location='error.html';
+    }
   }
 
 
   function getBestChamp(jsonObj) {
-	var myH3 = document.createElement('h1');
 	var champPoints = jsonObj[0]['championPoints'];
 	var champId = jsonObj[0]['championId'];
-	myH3.textContent = champPoints;
 	calculateOneTrick(jsonObj,champPoints);
-	header.appendChild(myH3);
+	document.getElementById("masteryScore").innerHTML += ("Mastery Score: " + champPoints);
 	championName(champId,apiKEY);
   }
   

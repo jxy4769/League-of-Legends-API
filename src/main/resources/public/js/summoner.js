@@ -3,7 +3,7 @@ function summoner(name){
   var header = document.querySelector('header');
   var section = document.querySelector('section');
   var proxy = 'https://cors-anywhere.herokuapp.com/';
-  var apiKEY =  'RGAPI-099247db-98fb-4345-a4aa-cd091eaa75bb';
+  var apiKEY =  'RGAPI-fb582f48-8f3b-444a-9e07-df7c94c0d340';
   var apiRequestURL = 'https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/'+name+'?api_key='+ apiKEY;
   var requestURL = proxy + apiRequestURL;
   var request = new XMLHttpRequest();
@@ -31,11 +31,10 @@ function summoner(name){
 
 	id += jsonObj['id'];
 	var myH1 = document.createElement('h1');
+	var myH2 = document.createElement('h1');
 	var myH3 = document.createElement('h1');
-	myH1.textContent = "Summoner Name: " + jsonObj['name'];
-	myH3.textContent = "Level: " + jsonObj['summonerLevel']
-	header.appendChild(myH1);
-	header.appendChild(myH3);
+	document.getElementById("summonerName").innerHTML += ("Summoner Name: " + jsonObj['name']);
+	document.getElementById("summonerLevel").innerHTML += ("Summoner Level: " + jsonObj['summonerLevel']);
 	masteryList(id,apiKEY);
 	RankedRating(id,apiKEY);
   }
