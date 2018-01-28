@@ -10,6 +10,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="resources/public/js/summoner.js"></script>
+  <script src="resources/public/js/masteryList.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Roboto" rel="stylesheet">
 </head>
 <style>
@@ -31,17 +32,11 @@
 </body>
 
 
-<script LANGUAGE="JavaScript">
-
-var name = sessionStorage.getItem("name");
-document.write("name = " + name + "<br>");
-
-</script>
-
 <script>
-
+var name = sessionStorage.getItem("name");
 var header = document.querySelector('header');
 var section = document.querySelector('section');
+var summonerId = summoner(name);
 </script>
 
 </html>

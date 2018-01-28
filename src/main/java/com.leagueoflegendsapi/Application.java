@@ -1,4 +1,4 @@
-package com.leagueoflegendsapi;
+  package com.leagueoflegendsapi;
 
 import java.io.InputStream;
 import java.util.logging.LogManager;
