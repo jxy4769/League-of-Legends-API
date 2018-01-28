@@ -33,16 +33,29 @@
     <p>Are you a One Trick?</p>
      <button type="button" id="hide" class="btn main-button" onclick="document.getElementById('demo').style.display='block';document.getElementById('hide').style.display='none' ">Search</button>
 	 
-    <form class="form-inline" id="demo" style="display:none">
+    <form class="form-inline" id="demo" style="display:none" method="get">
       <div class="input-group">
-        <input class="form-control" size="50" placeholder="Enter Summoner Name" required>
+        <input class="form-control" id="input" size="50" placeholder="Enter Summoner Name" required>
         <div class="input-group-btn">
-          <button type="button" class="btn search-button" onclick="window.location='results.html'">Search</button>
+          <button type="button" class="btn search-button" id="submit" >Search</button>
         </div>
       </div>
     </form>
   </div> <!-- hero-text -->
 </div> <!-- hero-image -->
+
+<script>
+
+  var object = document.getElementById("submit");
+  object.onclick = function(){myFunction()};
+
+  function myFunction(){
+  var name_box = document.getElementById("input");
+  var name = name_box.value;
+  sessionStorage.setItem("name", name);
+  window.location='results.html';
+  }
+</script>
 
 </body>
 </html>
